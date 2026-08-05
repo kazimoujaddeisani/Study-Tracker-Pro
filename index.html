@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Study Tracker Pro 3.0</title>
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>📚 Study Tracker Pro 3.0</h1>
+
+<p>NTRCA Job Preparation Tracker</p>
+
+</header>
+
+
+
+<main>
+
+
+<section class="progress-box">
+
+<h2>📊 Overall Progress</h2>
+
+<div class="progress-bar">
+
+<div id="progressBar" class="progress"></div>
+
+</div>
+
+
+<p id="progressText">
+Complete: 0%
+</p>
+
+
+<button onclick="resetProgress()">
+Reset Progress
+</button>
+
+</section>
+
+
+
+
+
+<section>
+
+<h2>📚 Subjects</h2>
+
+
+<div class="subject-container">
+
+
+<div class="subject-card bangla" onclick="loadSubject('bangla')">
+
+<h3>📖 বাংলা</h3>
+
+<p>120 Topics</p>
+
+</div>
+
+
+
+<div class="subject-card english" onclick="loadSubject('english')">
+
+<h3>🇬🇧 English</h3>
+
+<p>95 Topics</p>
+
+</div>
+
+
+
+<div class="subject-card math" onclick="loadSubject('math')">
+
+<h3>➗ Mathematics</h3>
+
+<p>85 Topics</p>
+
+</div>
+
+
+
+<div class="subject-card gk" onclick="loadSubject('gk')">
+
+<h3>🌍 General Knowledge</h3>
+
+<p>140 Topics</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="topic-section">
+
+
+<h2 id="subjectTitle">
+Select Subject
+</h2>
+
+
+
+<input
+
+type="text"
+
+id="searchInput"
+
+class="search-box"
+
+placeholder="Search Topic..."
+
+onkeyup="searchTopic()">
+
+
+<div id="topicList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="routine-box">
+
+
+<h2>🗓️ Daily Routine</h2>
+
+
+<label>
+<input type="checkbox" class="routine-check">
+📖 বাংলা পড়া
+</label>
+
+
+<br>
+
+
+<label>
+<input type="checkbox" class="routine-check">
+🇬🇧 English পড়া
+</label>
+
+
+<br>
+
+
+<label>
+<input type="checkbox" class="routine-check">
+➗ Math Practice
+</label>
+
+
+<br>
+
+
+<label>
+<input type="checkbox" class="routine-check">
+🌍 GK Revision
+</label>
+
+
+
+<br><br>
+
+
+<button onclick="saveRoutine()">
+Save Routine
+</button>
+
+
+<p id="streakText">
+🔥 Current Streak: 0 দিন
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>🎯 Daily Target</h2>
+
+
+<input
+
+type="number"
+
+id="dailyTarget"
+
+placeholder="আজ কত Topic পড়বে">
+
+
+<button onclick="saveTarget()">
+
+Save Target
+
+</button>
+
+
+<p id="targetStatus">
+
+Target সেট করুন
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>📝 Note</h2>
+
+
+<textarea id="noteInput"></textarea>
+
+
+<br>
+
+
+<button onclick="saveNote()">
+
+Save Note
+
+</button>
+
+
+<p id="noteStatus"></p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>⭐ Bookmark</h2>
+
+
+<div id="bookmarkList">
+
+No Bookmark Added
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>📝 MCQ Practice</h2>
+
+
+<h3 id="mcqQuestion">
+
+Question Loading...
+
+</h3>
+
+
+<div id="mcqOptions">
+
+</div>
+
+
+<p id="mcqResult">
+
+</p>
+
+
+<button onclick="nextMCQ()">
+
+Next Question
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+<h2 id="countdown">
+
+Loading...
+
+</h2>
+
+
+
+
+
+<button onclick="toggleDarkMode()">
+
+🌙 Dark Mode
+
+</button>
+
+
+</main>
+
+
+
+
+
+<footer>
+
+<p>
+প্রতিদিন নিয়মিত পড়াশোনা করে Progress Update করুন।
+</p>
+
+
+<p>
+© 2026 Study Tracker Pro 3.0
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<!-- JavaScript Files -->
+
+<script src="./subject.js"></script>
+
+<script src="./data/bangla.js"></script>
+
+<script src="./data/english.js"></script>
+
+<script src="./data/math.js"></script>
+
+<script src="./data/gk.js"></script>
+
+
+<script src="./script.js"></script>
+
+
+
+</body>
+
+</html>
