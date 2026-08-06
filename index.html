@@ -11,26 +11,13 @@
 
 <link rel="stylesheet" href="./style.css">
 
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#2563eb">
+<meta name="mobile-web-app-capable" content="yes">
+
 </head>
 
-
 <body>
-
-
-<header>
-
-<h1>📚 Study Tracker Pro 3.0</h1>
-
-<p>NTRCA Job Preparation Tracker</p>
-
-</header>
-
-
-
-<main>
-
-
-<section class="progress-box">
 
 <h2>📊 Overall Progress</h2>
 
@@ -397,7 +384,15 @@ Loading...
 
 <script src="./script.js"></script>
 
-
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch((err) => console.log("Service Worker Error:", err));
+  });
+}
+</script>
 
 </body>
 
