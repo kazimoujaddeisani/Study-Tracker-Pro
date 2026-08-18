@@ -2,7 +2,7 @@
 // Study Tracker Pro 3.0
 // Mathematics Topic Database
 // NTRCA Preparation
-// Total Topic: 85
+// Total Topic: 88+
 // ================================
 
 const mathTopics = [
@@ -96,6 +96,10 @@ const mathTopics = [
 "Permutation",
 "Combination",
 "Probability (Advanced)",
-"যুক্তি ও বিশ্লেষণমূলক গণিত"
+"যুক্তি ও বিশ্লেষণমূলক গণিত",
+
+// PSC focused reasoning topics
+"দিক নির্ণয়",
+"Pattern ও চিত্রভিত্তিক যুক্তি"
 
 ];
