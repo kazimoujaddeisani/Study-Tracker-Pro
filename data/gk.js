@@ -2,7 +2,7 @@
 // Study Tracker Pro 3.0
 // General Knowledge Topic Database
 // NTRCA Preparation
-// Total Topic: 140
+// Total Topic: 170+
 // ================================
 
 const gkTopics = [
@@ -153,6 +153,42 @@ const gkTopics = [
 "জীববৈচিত্র্য",
 "জাতীয় ও আন্তর্জাতিক পরিবেশ সংস্থা",
 "সাম্প্রতিক বাংলাদেশ বিষয়াবলি",
-"সাম্প্রতিক আন্তর্জাতিক বিষয়াবলি"
+"সাম্প্রতিক আন্তর্জাতিক বিষয়াবলি",
+
+// PSC focused Bangladesh topics
+"রাষ্ট্রের সাংবিধানিক নাম",
+"বাংলাদেশের প্রাচীন নাম",
+"বাংলাদেশের সর্বউত্তর জেলা",
+"বাংলাদেশের সর্বদক্ষিণ জেলা",
+"বাংলাদেশের সর্বপূর্ব জেলা",
+"বাংলাদেশের সর্বপশ্চিম জেলা",
+"বাংলাদেশের চা শিল্প",
+"কৃষি গবেষণা ও গবেষণা প্রতিষ্ঠান",
+"সুন্দরবন",
+"গুরুত্বপূর্ণ সরকারি প্রতিষ্ঠান",
+
+// PSC focused international topics
+"বিশ্বব্যাংক",
+"আন্তর্জাতিক সংস্থার সদর দপ্তর",
+"Panama Canal",
+"আন্তর্জাতিক ঐতিহাসিক তথ্য",
+
+// PSC focused science topics
+"পরিমাপ ও একক",
+"আলোর মৌলিক ধারণা",
+"চোখ ও দৃষ্টিশক্তি",
+"অক্সিজেন (O₂)",
+"কার্বন ডাই-অক্সাইড (CO₂)",
+"নাইট্রোজেন (N₂)",
+"ক্লোরিন (Cl₂)",
+"গ্যাসের মৌলিক ধারণা",
+
+// PSC focused ICT topics
+"Artificial Intelligence-এর Application",
+"Web Browser",
+"Text Editor",
+"Spreadsheet Software",
+"Virtual Assistant",
+"Basic Computer Knowledge"
 
 ];
