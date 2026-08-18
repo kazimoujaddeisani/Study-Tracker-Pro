@@ -2,7 +2,7 @@
 // Study Tracker Pro 3.0
 // English Topic Database
 // NTRCA Preparation
-// Total Topic: 95
+// Total Topic: 102+
 // ================================
 
 const englishTopics = [
@@ -99,6 +99,13 @@ const englishTopics = [
 "Participle",
 "Modal Auxiliary Verb",
 "Subject and Predicate",
-"Advanced Tag Question"
+"Advanced Tag Question",
+
+// PSC focused topics
+"Sentence Correction",
+"Appropriate Sentence",
+"Word Meaning",
+"Word Usage",
+"Masculine and Feminine"
 
 ];
