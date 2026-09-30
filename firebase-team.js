@@ -3,7 +3,8 @@ import { ref, get, set, onValue } from "https://www.gstatic.com/firebasejs/11.0.
 const TEAM_USERS = {
   sani: { name: "Sani", pin: "2001" },
   sajin: { name: "Sajin", pin: "2005" },
-  rifa: { name: "Rifa", pin: "2003" }
+  rifa: { name: "Rifa", pin: "2003" },
+  juthi: { name: "Juthi", pin: "2004" }
 };
 
 let db = null;
@@ -104,7 +105,7 @@ function renderTeamProgress() {
   if (!box) return;
 
   const total = getTotalTopics();
-  const order = ["sani", "sajin", "rifa"];
+  const order = ["sani", "sajin", "rifa", "juthi"];
 
   box.innerHTML = order.map(id => {
     const user = TEAM_USERS[id];
