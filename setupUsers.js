@@ -8,7 +8,8 @@ console.log("Setup Users Loaded");
 const defaultUsers = {
     sani: { name: "Sani", pin: "2001" },
     sajin: { name: "Sajin", pin: "2005" },
-    rifa: { name: "Rifa", pin: "2003" }
+    rifa: { name: "Rifa", pin: "2003" },
+    juthi: { name: "Juthi", pin: "2004" }
 };
 
 function createDefaultUsers() {
